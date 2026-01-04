@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how VOCL captures EMG signals from facial muscles and translates them into speech using machine learning.">
+    <title>How It Works | VOCL</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="VOCL Home">
+                <img src="logo.png" alt="VOCL Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="how-it-works.html" class="active">How It Works</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="demo.html">Demo</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" aria-hidden="true">
+        <ul class="mobile-nav-links">
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">How It Works</h1>
+                <p class="page-subtitle">VOCL captures electrical signals from facial muscles during attempted speech—even without vocalization—and translates them into words.</p>
+            </div>
+        </section>
+
+        <!-- Steps Section -->
+        <section class="how-it-works-page">
+            <div class="container">
+                <div class="steps-grid">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M24 12 L24 16 M24 32 L24 36 M12 24 L16 24 M32 24 L36 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Calibration</h3>
+                        <p>Users complete a 10-minute personalization sequence, attempting 20 common phonemes. Our adaptive algorithms learn each user's unique muscle activation patterns, accounting for variations in anatomy and condition.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <rect x="8" y="14" width="32" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M12 24 L16 20 L20 26 L24 18 L28 28 L32 22 L36 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Signal Capture</h3>
+                        <p>When users attempt to speak, voltage drops as subtle as 5 microvolts run across facial muscles. Our 8 gold cup electrodes measure these signals from key speech muscles—the orbicularis oris and depressor labii inferioris.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M8 36 L8 16 L16 16 L16 36 M20 36 L20 22 L28 22 L28 36 M32 36 L32 12 L40 12 L40 36" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M6 38 L42 38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>AI Decoding</h3>
+                        <p>Our CNN-LSTM pipeline recognizes individual phonemes and predicts words. LLM integration provides context-aware error correction, producing natural output with under 300ms latency.</p>
+                    </div>
+                </div>
+
+                <!-- Key Insight -->
+                <div class="key-insight">
+                    <div class="insight-content">
+                        <h3>Why EMG?</h3>
+                        <p>EMG signals from attempted speech are <strong>3-5× stronger</strong> than imagined speech signals—rendering brain surgery obsolete while delivering natural, non-invasive communication.</p>
+                    </div>
+                </div>
+
+                <!-- Who It's For -->
+                <div class="who-section">
+                    <h2>Who We're Building For</h2>
+                    <p class="section-intro">Patients who retain residual control of their facial muscles but cannot vocalize.</p>
+                    
+                    <div class="conditions-grid">
+                        <div class="condition-card">
+                            <h3>ALS Patients</h3>
+                            <p>Individuals in early-to-mid stage ALS who retain motor planning ability. As Dr. Sergey Stavisky noted, "Non-invasive signals can definitely serve early stage ALS patients who still retain residual movement ability."</p>
+                        </div>
+                        
+                        <div class="condition-card">
+                            <h3>Stroke Survivors</h3>
+                            <p>Post-stroke dysarthria patients who understand language fully but struggle to produce it. Speech loss is the driving force for depression in 64% of stroke survivors.</p>
+                        </div>
+                        
+                        <div class="condition-card">
+                            <h3>Dysarthria & Aphasia</h3>
+                            <p>Progressive conditions affecting speech muscle control—from Parkinson's to MS—where the brain's speech commands remain intact but neuromuscular execution fails.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-cta">
+                    <a href="technology.html" class="btn btn-primary">Explore Our Technology</a>
+                    <a href="demo.html" class="btn btn-secondary">Try the Demo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="VOCL" class="footer-logo">
+                    <p>Restoring voices through neurotechnology.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Learn</h4>
+                        <ul>
+                            <li><a href="story.html">Our Story</a></li>
+                            <li><a href="how-it-works.html">How It Works</a></li>
+                            <li><a href="technology.html">Technology</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VOCL. All rights reserved.</p>
+                <p class="footer-disclaimer">VOCL is an investigational device in development. Not cleared for clinical use.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

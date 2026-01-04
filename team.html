@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the VOCL team - high school researchers advised by leading neuroscientists from UChicago, UC Davis, and Northwestern.">
+    <title>Team | VOCL</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="VOCL Home">
+                <img src="logo.png" alt="VOCL Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="demo.html">Demo</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" aria-hidden="true">
+        <ul class="mobile-nav-links">
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Team</h1>
+                <p class="page-subtitle">High school researchers guided by leading neuroscientists</p>
+            </div>
+        </section>
+
+        <!-- Team Content -->
+        <section class="team-page">
+            <div class="container">
+                <div class="team-intro">
+                    <p>We're a team of high school researchers united by a shared mission: restoring the voices of those who've lost them. What started as a personal project after losing Ye-Ye has grown into a serious research effort with guidance from leading neuroscientists.</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>Idhant</h3>
+                        <p class="role">Hardware Engineering</p>
+                        <p>Engineers signal acquisition hardware and electrode systems</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Atharva</h3>
+                        <p class="role">Machine Learning</p>
+                        <p>Develops the CNN-LSTM models and signal processing pipeline</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Craig</h3>
+                        <p class="role">Product Development</p>
+                        <p>Handles ergonomic testing and MVP refinement</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Jayden</h3>
+                        <p class="role">Clinical Validation</p>
+                        <p>Validates our ideas with clinicians and researchers</p>
+                    </div>
+                    <div class="team-member">
+                        <h3>James</h3>
+                        <p class="role">Research Coordination</p>
+                        <p>Coordinates market research with experts and patient families</p>
+                    </div>
+                </div>
+
+                <div class="advisors">
+                    <h3>Research Advisors</h3>
+                    
+                    <!-- University Seals -->
+                    <div class="university-seals">
+                        <img src="images/uchiacgo-seal.png" alt="University of Chicago" class="university-seal">
+                        <img src="images/ucdavis-seal.png" alt="UC Davis" class="university-seal">
+                        <img src="images/nw-seal.png" alt="Northwestern University" class="university-seal">
+                    </div>
+                    
+                    <div class="advisor-grid">
+                        <div class="advisor">
+                            <img src="images/uchiacgo-seal.png" alt="" class="advisor-seal">
+                            <span class="advisor-name">Dr. Nicholas Hatsopoulos</span>
+                            <span class="advisor-affiliation">University of Chicago</span>
+                            <span class="advisor-specialty">Motor Cortex BCIs</span>
+                        </div>
+                        <div class="advisor">
+                            <img src="images/ucdavis-seal.png" alt="" class="advisor-seal">
+                            <span class="advisor-name">Dr. Sergey Stavisky</span>
+                            <span class="advisor-affiliation">UC Davis</span>
+                            <span class="advisor-specialty">2023 International BCI Award Winner</span>
+                        </div>
+                        <div class="advisor">
+                            <img src="images/uchiacgo-seal.png" alt="" class="advisor-seal">
+                            <span class="advisor-name">Dr. Howard Nusbaum</span>
+                            <span class="advisor-affiliation">UChicago Psychology</span>
+                            <span class="advisor-specialty">Speech & Language</span>
+                        </div>
+                        <div class="advisor">
+                            <img src="images/nw-seal.png" alt="" class="advisor-seal">
+                            <span class="advisor-name">Dr. Dina Simkin</span>
+                            <span class="advisor-affiliation">Northwestern</span>
+                            <span class="advisor-specialty">Clinical Neurology</span>
+                        </div>
+                    </div>
+                    
+                    <p class="advisor-quote">"The bar is incredibly low for non-invasive ALS speech solutions—a product like this, if done properly, would be revolutionary."<br><span class="quote-attribution">— Dr. Nicholas Hatsopoulos, University of Chicago</span></p>
+                </div>
+
+                <div class="clinical-partners">
+                    <h3>Clinical Partners</h3>
+                    <p>Pilot program with 50 early-stage ALS and post-stroke dysarthria patients at Northwestern Medicine and Shirley Ryan AbilityLab.</p>
+                </div>
+
+                <!-- Market Validation -->
+                <div class="validation-section">
+                    <h3>Market Validation</h3>
+                    <p class="section-intro">We surveyed 127 patients, families, and clinicians to validate the need.</p>
+                    
+                    <div class="survey-grid">
+                        <div class="survey-group">
+                            <h4>68 Patients & Families</h4>
+                            <div class="survey-stats">
+                                <div class="survey-stat">
+                                    <span class="survey-number">91%</span>
+                                    <span class="survey-label">confirmed current solutions are inadequate</span>
+                                </div>
+                                <div class="survey-stat">
+                                    <span class="survey-number">87%</span>
+                                    <span class="survey-label">would consider purchasing VOCL at $2,500</span>
+                                </div>
+                                <div class="survey-stat">
+                                    <span class="survey-number">94%</span>
+                                    <span class="survey-label">prefer non-invasive options over surgery</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="survey-group">
+                            <h4>59 Clinicians</h4>
+                            <div class="survey-stats">
+                                <div class="survey-stat">
+                                    <span class="survey-number">93%</span>
+                                    <span class="survey-label">recognize unmet need for affordable speech restoration</span>
+                                </div>
+                                <div class="survey-stat">
+                                    <span class="survey-number">98%</span>
+                                    <span class="survey-label">believe VOCL addresses a critical gap</span>
+                                </div>
+                                <div class="survey-stat">
+                                    <span class="survey-number">86%</span>
+                                    <span class="survey-label">would recommend to patients if FDA approved</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-cta">
+                    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                    <a href="story.html" class="btn btn-secondary">Read Our Story</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="VOCL" class="footer-logo">
+                    <p>Restoring voices through neurotechnology.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Learn</h4>
+                        <ul>
+                            <li><a href="story.html">Our Story</a></li>
+                            <li><a href="how-it-works.html">How It Works</a></li>
+                            <li><a href="technology.html">Technology</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VOCL. All rights reserved.</p>
+                <p class="footer-disclaimer">VOCL is an investigational device in development. Not cleared for clinical use.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

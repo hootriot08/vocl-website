@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Try the VOCL interactive demo - experience phoneme recognition and EMG signal visualization.">
+    <title>Demo | VOCL</title>
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="demo-page-body">
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="VOCL Home">
+                <img src="logo.png" alt="VOCL Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="demo.html" class="active">Demo</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" aria-hidden="true">
+        <ul class="mobile-nav-links">
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Demo Portal -->
+        <section class="demo-portal-full">
+            <div class="container">
+                <div class="demo-header">
+                    <h1 class="page-title">Experience VOCL</h1>
+                    <p class="page-subtitle">This interactive demonstration simulates the VOCL experience. Build phoneme sequences through subvocalization patterns, then visualize real-world EMG signals captured from actual users.</p>
+                </div>
+                
+                <div class="demo-container-full">
+                    <div class="demo-frame-wrapper-full">
+                        <div class="demo-frame-header">
+                            <div class="demo-status">
+                                <span class="status-dot"></span>
+                                <span>Live Demo</span>
+                            </div>
+                            <span class="demo-badge">Interactive</span>
+                        </div>
+                        <iframe 
+                            src="https://voclspeak.streamlit.app/?embedded=true" 
+                            class="demo-iframe-full"
+                            title="VOCL Interactive Demo - Phoneme Recognition Simulator"
+                            allow="clipboard-write"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="demo-info-row">
+                    <div class="demo-info-card">
+                        <h3>What You're Seeing</h3>
+                        <p>Each phoneme represents distinct muscle activation patterns that VOCL learns to recognize and translate into speech.</p>
+                    </div>
+                    <div class="demo-info-card">
+                        <h3>Real EMG Data</h3>
+                        <p>The signal visualizations are captured from actual users during subvocalization attempts—the same data our ML models train on.</p>
+                    </div>
+                    <div class="demo-info-card">
+                        <h3>Try It</h3>
+                        <p>Select phonemes to see their unique EMG signatures. Notice how different sounds produce distinct waveform patterns.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="VOCL" class="footer-logo">
+                    <p>Restoring voices through neurotechnology.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Learn</h4>
+                        <ul>
+                            <li><a href="story.html">Our Story</a></li>
+                            <li><a href="how-it-works.html">How It Works</a></li>
+                            <li><a href="technology.html">Technology</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VOCL. All rights reserved.</p>
+                <p class="footer-disclaimer">VOCL is an investigational device in development. Not cleared for clinical use.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -13,17 +13,6 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="logo.png">
     
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ResearchProject",
-        "name": "VOCL",
-        "description": "Non-invasive EMG headset for speech restoration",
-        "foundingDate": "2024"
-    }
-    </script>
-    
     <title>VOCL | Restoring Voices Through Neurotechnology</title>
     
     <link rel="icon" type="image/png" href="logo.png">
@@ -36,16 +25,16 @@
     <!-- Navigation -->
     <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="#" class="nav-logo" aria-label="VOCL Home">
+            <a href="index.html" class="nav-logo" aria-label="VOCL Home">
                 <img src="logo.png" alt="VOCL Logo" class="logo-img">
             </a>
             <ul class="nav-links">
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#demo">Demo</a></li>
-                <li><a href="#technology">Technology</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+                <li><a href="story.html">Our Story</a></li>
+                <li><a href="how-it-works.html">How It Works</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="demo.html">Demo</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
             </ul>
             <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
@@ -58,33 +47,33 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" aria-hidden="true">
         <ul class="mobile-nav-links">
-            <li><a href="#story">Our Story</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#demo">Demo</a></li>
-            <li><a href="#technology">Technology</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="story.html">Our Story</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </div>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero" aria-labelledby="hero-heading">
+        <section class="hero hero-full" aria-labelledby="hero-heading">
             <div class="container">
                 <div class="hero-content">
                     <p class="hero-label">Non-invasive Speech Restoration</p>
                     <h1 id="hero-heading">Giving Voice to<br>Those Who've Lost Theirs</h1>
                     <p class="hero-subtitle">VOCL is a non-invasive EMG headset that decodes attempted speech from facial muscle signals, restoring natural communication for people with ALS, aphasia, and dysarthria.</p>
                     <div class="hero-cta">
-                        <a href="#story" class="btn btn-primary">Our Story</a>
-                        <a href="#how-it-works" class="btn btn-secondary">How It Works</a>
+                        <a href="story.html" class="btn btn-primary">Our Story</a>
+                        <a href="how-it-works.html" class="btn btn-secondary">How It Works</a>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="product-showcase">
                         <div class="device-illustration">
-                            <svg viewBox="0 0 420 320" class="device-svg" aria-hidden="true">
-                                <!-- Clean electrode visualization -->
+                            <svg viewBox="0 0 450 400" class="device-svg" aria-hidden="true">
+                                <!-- 8-Channel Electrode Visualization -->
                                 <defs>
                                     <linearGradient id="signalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                                         <stop offset="0%" style="stop-color:#0066cc;stop-opacity:0.2" />
@@ -92,7 +81,7 @@
                                         <stop offset="100%" style="stop-color:#0066cc;stop-opacity:0.2" />
                                     </linearGradient>
                                     <filter id="glow">
-                                        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
                                         <feMerge>
                                             <feMergeNode in="coloredBlur"/>
                                             <feMergeNode in="SourceGraphic"/>
@@ -100,52 +89,64 @@
                                     </filter>
                                 </defs>
                                 
-                                <!-- Simple head outline - no facial features -->
-                                <path d="M200 25 
-                                         C290 25 340 100 340 170 
-                                         C340 220 320 255 295 280
-                                         C270 305 240 315 200 315
-                                         C160 315 130 305 105 280
-                                         C80 255 60 220 60 170 
-                                         C60 100 110 25 200 25Z" 
-                                      fill="none" stroke="#1a1a2e" stroke-width="2" opacity="0.25"/>
+                                <!-- Head outline - side profile view -->
+                                <path d="M180 30 
+                                         C280 30 320 80 330 140
+                                         C340 180 335 220 320 260
+                                         C310 290 290 320 260 340
+                                         L220 360
+                                         L200 380
+                                         L200 400
+                                         L180 400
+                                         L180 380
+                                         L160 360
+                                         L140 340
+                                         C110 310 90 270 85 230
+                                         C80 180 90 130 120 90
+                                         C140 60 160 30 180 30Z" 
+                                      fill="none" stroke="#1a1a2e" stroke-width="2" opacity="0.2"/>
                                 
-                                <!-- Electrode positions - matching actual placement -->
+                                <!-- 8 Electrode positions - all on same side of face -->
                                 <g class="electrodes" filter="url(#glow)">
-                                    <!-- Orbicularis oris superior (2 electrodes) -->
-                                    <circle cx="165" cy="195" r="10" fill="#0066cc" class="electrode e1"/>
-                                    <circle cx="235" cy="195" r="10" fill="#0066cc" class="electrode e2"/>
+                                    <!-- Upper lip (2 electrodes) -->
+                                    <circle cx="240" cy="195" r="12" fill="#0066cc" class="electrode e1"/>
+                                    <circle cx="270" cy="190" r="12" fill="#0066cc" class="electrode e2"/>
                                     
-                                    <!-- Orbicularis oris inferior (2 electrodes) -->
-                                    <circle cx="155" cy="235" r="10" fill="#0066cc" class="electrode e3"/>
-                                    <circle cx="200" cy="242" r="10" fill="#0066cc" class="electrode e4"/>
+                                    <!-- Lower lip (2 electrodes) -->
+                                    <circle cx="235" cy="225" r="12" fill="#0066cc" class="electrode e3"/>
+                                    <circle cx="265" cy="230" r="12" fill="#0066cc" class="electrode e4"/>
                                     
-                                    <!-- Depressor labii inferioris -->
-                                    <circle cx="245" cy="235" r="10" fill="#0066cc" class="electrode e5"/>
+                                    <!-- Depressor labii inferioris / Chin (2 electrodes) -->
+                                    <circle cx="220" cy="270" r="12" fill="#0066cc" class="electrode e5"/>
+                                    <circle cx="250" cy="280" r="12" fill="#0066cc" class="electrode e6"/>
                                     
-                                    <!-- Platysma -->
-                                    <circle cx="200" cy="280" r="10" fill="#0066cc" class="electrode e6"/>
+                                    <!-- Neck / Platysma (2 electrodes) -->
+                                    <circle cx="195" cy="340" r="12" fill="#0066cc" class="electrode e7"/>
+                                    <circle cx="210" cy="365" r="12" fill="#0066cc" class="electrode e8"/>
                                 </g>
                                 
-                                <!-- Signal waves emanating from electrodes -->
+                                <!-- Signal waves -->
                                 <g class="signal-lines">
-                                    <path d="M265 195 Q290 195 305 185 Q320 175 335 190 Q350 205 365 190 Q380 175 395 190" 
+                                    <path d="M285 195 Q310 195 325 180 Q340 165 355 185 Q370 205 385 185 Q400 165 420 185" 
                                           fill="none" stroke="url(#signalGradient)" stroke-width="2.5" class="signal s1"/>
-                                    <path d="M265 235 Q290 235 305 225 Q320 215 335 230 Q350 245 365 230 Q380 215 395 230" 
+                                    <path d="M280 230 Q305 230 320 215 Q335 200 350 220 Q365 240 380 220 Q395 200 420 220" 
                                           fill="none" stroke="url(#signalGradient)" stroke-width="2.5" class="signal s2"/>
-                                    <path d="M220 280 Q245 280 260 270 Q275 260 290 275 Q305 290 320 275 Q335 260 350 275" 
+                                    <path d="M265 280 Q290 280 305 265 Q320 250 335 270 Q350 290 365 270 Q380 250 405 270" 
                                           fill="none" stroke="url(#signalGradient)" stroke-width="2.5" class="signal s3"/>
+                                    <path d="M230 365 Q255 365 270 350 Q285 335 300 355 Q315 375 330 355 Q345 335 370 355" 
+                                          fill="none" stroke="url(#signalGradient)" stroke-width="2.5" class="signal s4"/>
                                 </g>
                                 
-                                <!-- Minimal labels -->
-                                <g class="electrode-labels" font-size="11" fill="#1a1a2e" opacity="0.6">
-                                    <text x="55" y="198">Upper lip</text>
-                                    <text x="55" y="238">Lower lip</text>
-                                    <text x="200" y="310" text-anchor="middle">Chin</text>
+                                <!-- Labels -->
+                                <g class="electrode-labels" font-size="12" fill="#1a1a2e" opacity="0.7">
+                                    <text x="120" y="195">Upper lip (2)</text>
+                                    <text x="120" y="230">Lower lip (2)</text>
+                                    <text x="100" y="275">Chin (2)</text>
+                                    <text x="100" y="355">Neck (2)</text>
                                 </g>
                             </svg>
                         </div>
-                        <p class="device-caption">6 electrodes targeting speech muscles</p>
+                        <p class="device-caption">8-channel EMG electrode placement</p>
                     </div>
                 </div>
             </div>
@@ -175,430 +176,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Our Story -->
-        <section class="story" id="story" aria-labelledby="story-heading">
-            <div class="container">
-                <div class="section-logo">
-                    <img src="logo.png" alt="" class="section-logo-img" aria-hidden="true">
-                </div>
-                <h2 id="story-heading" class="section-title">Our Story</h2>
-                
-                <div class="story-content">
-                    <div class="story-text">
-                        <p class="story-lead">VOCL began with Ye-Ye.</p>
-                        <p>Over the summer, we visited James's house and met his grandfather—we affectionately called him Ye-Ye. He was 82 and battling ALS. Every visit that summer, we'd tell him about our day. He'd listen, silently tracking us with his eyes. His problem was the same as millions of others: <strong>his brain worked, but his muscles didn't.</strong></p>
-                        <p>When Ye-Ye passed away late that summer, we were devastated. That fall, we read about Stanford researchers decoding inner speech with 74% accuracy—but it required invasive implants costing tens of thousands of dollars.</p>
-                        <p class="story-realization">We realized: if they could decode thoughts invasively, why couldn't we decode attempted speech non-invasively?</p>
-                        <p>That question became VOCL. Our goal isn't just to restore speech—it's to restore people's fundamental right to be heard.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- How It Works -->
-        <section class="how-it-works" id="how-it-works" aria-labelledby="how-heading">
-            <div class="container">
-                <h2 id="how-heading" class="section-title">How It Works</h2>
-                <p class="section-intro">VOCL captures electrical signals from facial muscles during attempted speech—even without vocalization—and translates them into words.</p>
-                
-                <div class="steps-grid">
-                    <div class="step">
-                        <div class="step-number">01</div>
-                        <div class="step-icon">
-                            <svg viewBox="0 0 48 48" aria-hidden="true">
-                                <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M24 12 L24 16 M24 32 L24 36 M12 24 L16 24 M32 24 L36 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                                <circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                                <circle cx="24" cy="24" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <h3>Calibration</h3>
-                        <p>Users complete a 10-minute personalization sequence, attempting 20 common phonemes. Our adaptive algorithms learn each user's unique muscle activation patterns, accounting for variations in anatomy and condition.</p>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">02</div>
-                        <div class="step-icon">
-                            <svg viewBox="0 0 48 48" aria-hidden="true">
-                                <rect x="8" y="14" width="32" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M12 24 L16 20 L20 26 L24 18 L28 28 L32 22 L36 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3>Signal Capture</h3>
-                        <p>When users attempt to speak, voltage drops as subtle as 5 microvolts run across facial muscles. Our 8 gold cup electrodes measure these signals from key speech muscles—the orbicularis oris and depressor labii inferioris.</p>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">03</div>
-                        <div class="step-icon">
-                            <svg viewBox="0 0 48 48" aria-hidden="true">
-                                <path d="M8 36 L8 16 L16 16 L16 36 M20 36 L20 22 L28 22 L28 36 M32 36 L32 12 L40 12 L40 36" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M6 38 L42 38" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h3>AI Decoding</h3>
-                        <p>Our CNN-LSTM pipeline recognizes individual phonemes and predicts words. LLM integration provides context-aware error correction, producing natural output with under 300ms latency.</p>
-                    </div>
-                </div>
-
-                <!-- Key Insight -->
-                <div class="key-insight">
-                    <div class="insight-content">
-                        <h3>Why EMG?</h3>
-                        <p>EMG signals from attempted speech are <strong>3-5× stronger</strong> than imagined speech signals—rendering brain surgery obsolete while delivering natural, non-invasive communication.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Who It's For -->
-        <section class="who-its-for" aria-labelledby="who-heading">
-            <div class="container">
-                <h2 id="who-heading" class="section-title">Who We're Building For</h2>
-                <p class="section-intro">Patients who retain residual control of their facial muscles but cannot vocalize.</p>
-                
-                <div class="conditions-grid">
-                    <div class="condition-card">
-                        <h3>ALS Patients</h3>
-                        <p>Individuals in early-to-mid stage ALS who retain motor planning ability. As Dr. Sergey Stavisky noted, "Non-invasive signals can definitely serve early stage ALS patients who still retain residual movement ability."</p>
-                    </div>
-                    
-                    <div class="condition-card">
-                        <h3>Stroke Survivors</h3>
-                        <p>Post-stroke dysarthria patients who understand language fully but struggle to produce it. Speech loss is the driving force for depression in 64% of stroke survivors.</p>
-                    </div>
-                    
-                    <div class="condition-card">
-                        <h3>Dysarthria & Aphasia</h3>
-                        <p>Progressive conditions affecting speech muscle control—from Parkinson's to MS—where the brain's speech commands remain intact but neuromuscular execution fails.</p>
-                    </div>
-                </div>
-
-                <div class="dignity-statement">
-                    <p>VOCL goes beyond just a device. It's a grandfather saying "I love you" to his grandson again. A teacher returning to the classroom. A parent reading bedtime stories. It's millions reclaiming their voices.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technology Deep-Dive -->
-        <section class="technology" id="technology" aria-labelledby="tech-heading">
-            <div class="container">
-                <div class="section-logo">
-                    <img src="logo.png" alt="" class="section-logo-img" aria-hidden="true">
-                </div>
-                <h2 id="tech-heading" class="section-title">Our Technology</h2>
-                <p class="section-intro">7 prototype iterations. 35 testing sessions. 6 months of development.</p>
-                
-                <div class="tech-grid">
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <svg viewBox="0 0 32 32" aria-hidden="true">
-                                <rect x="4" y="8" width="24" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M8 12 L8 20 M12 14 L12 18 M16 10 L16 22 M20 13 L20 19 M24 11 L24 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h3>Hardware</h3>
-                        <p>Custom 3D-printed PETG chassis housing an 8-channel OpenBCI Cyton board sampling at 250Hz. Eight gold cup electrodes maintain constant pressure across facial muscles, preventing signal loss in noisy environments. Final weight: ~420g.</p>
-                    </div>
-                    
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <svg viewBox="0 0 32 32" aria-hidden="true">
-                                <path d="M6 16 L12 16 L14 10 L18 22 L20 16 L26 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <circle cx="6" cy="16" r="2" fill="currentColor"/>
-                                <circle cx="26" cy="16" r="2" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <h3>Signal Processing</h3>
-                        <p>0.5-45Hz bandpass filtering with Independent Component Analysis (ICA) removes artifacts like eye blinks and jaw clenches. PCA-LDA dimensionality reduction compresses 256 features into 45 discriminative dimensions.</p>
-                    </div>
-                    
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <svg viewBox="0 0 32 32" aria-hidden="true">
-                                <circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M16 8 L16 16 L22 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <h3>Machine Learning</h3>
-                        <p>CNN-LSTM architecture trained on 440 phoneme utterances, generating 3,220 training samples. Achieves 82% single-subject phoneme classification accuracy and 68% continuous speech accuracy.</p>
-                    </div>
-                    
-                    <div class="tech-card">
-                        <div class="tech-icon">
-                            <svg viewBox="0 0 32 32" aria-hidden="true">
-                                <rect x="6" y="6" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                                <path d="M10 16 L14 20 L22 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <h3>Performance</h3>
-                        <p>Under 300ms end-to-end latency. Maintains signal quality across 2-hour sessions. LLM integration provides context-aware error correction for natural output.</p>
-                    </div>
-                </div>
-
-                <!-- Validation Stats -->
-                <div class="validation-stats">
-                    <h3>Validation Results</h3>
-                    <div class="validation-grid">
-                        <div class="validation-item">
-                            <span class="validation-number">1,847</span>
-                            <span class="validation-label">Words Successfully Decoded</span>
-                        </div>
-                        <div class="validation-item">
-                            <span class="validation-number">82%</span>
-                            <span class="validation-label">Phoneme Classification Accuracy</span>
-                        </div>
-                        <div class="validation-item">
-                            <span class="validation-number">&lt;300ms</span>
-                            <span class="validation-label">System Latency</span>
-                        </div>
-                        <div class="validation-item">
-                            <span class="validation-number">7</span>
-                            <span class="validation-label">Prototype Iterations</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Comparison -->
-                <div class="comparison-section">
-                    <h3>How VOCL Compares</h3>
-                    <div class="comparison-table">
-                        <div class="comparison-header">
-                            <span></span>
-                            <span>AAC Tablets</span>
-                            <span>Brain Implants</span>
-                            <span class="highlight">VOCL</span>
-                        </div>
-                        <div class="comparison-row">
-                            <span class="row-label">Cost</span>
-                            <span>$10,500</span>
-                            <span>$50,000-$100,000</span>
-                            <span class="highlight">~$2,500 target</span>
-                        </div>
-                        <div class="comparison-row">
-                            <span class="row-label">Speed</span>
-                            <span>10-15 WPM</span>
-                            <span>62 WPM</span>
-                            <span class="highlight">30-50 WPM target</span>
-                        </div>
-                        <div class="comparison-row">
-                            <span class="row-label">Invasive</span>
-                            <span>No</span>
-                            <span>Yes (surgery)</span>
-                            <span class="highlight">No</span>
-                        </div>
-                        <div class="comparison-row">
-                            <span class="row-label">Abandonment</span>
-                            <span>30-50%</span>
-                            <span>N/A</span>
-                            <span class="highlight">TBD</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Demo Portal -->
-        <section class="demo-portal" id="demo" aria-labelledby="demo-heading">
-            <div class="container">
-                <div class="demo-header">
-                    <h2 id="demo-heading" class="section-title">Experience VOCL</h2>
-                    <p class="section-intro">This interactive demonstration simulates the VOCL experience. Build phoneme sequences through subvocalization patterns, then visualize real-world EMG signals captured from actual users.</p>
-                </div>
-                
-                <div class="demo-container">
-                    <div class="demo-frame-wrapper">
-                        <div class="demo-frame-header">
-                            <div class="demo-status">
-                                <span class="status-dot"></span>
-                                <span>Live Demo</span>
-                            </div>
-                            <span class="demo-badge">Interactive</span>
-                        </div>
-                        <iframe 
-                            src="https://voclspeak.streamlit.app/?embedded=true" 
-                            class="demo-iframe"
-                            title="VOCL Interactive Demo - Phoneme Recognition Simulator"
-                            allow="clipboard-write"
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                    
-                    <div class="demo-sidebar">
-                        <div class="demo-info-card">
-                            <h3>What You're Seeing</h3>
-                            <p>Each phoneme represents distinct muscle activation patterns that VOCL learns to recognize and translate into speech.</p>
-                        </div>
-                        <div class="demo-info-card">
-                            <h3>Real EMG Data</h3>
-                            <p>The signal visualizations are captured from actual users during subvocalization attempts—the same data our ML models train on.</p>
-                        </div>
-                        <div class="demo-info-card">
-                            <h3>Try It</h3>
-                            <p>Select phonemes to see their unique EMG signatures. Notice how different sounds produce distinct waveform patterns.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team Section -->
-        <section class="team" id="team" aria-labelledby="team-heading">
-            <div class="container">
-                <h2 id="team-heading" class="section-title">Our Team</h2>
-                
-                <div class="team-intro">
-                    <p>We're a team of high school researchers united by a shared mission: restoring the voices of those who've lost them. What started as a personal project after losing Ye-Ye has grown into a serious research effort with guidance from leading neuroscientists.</p>
-                </div>
-
-                <div class="team-grid">
-                    <div class="team-member">
-                        <h3>Idhant</h3>
-                        <p class="role">Hardware Engineering</p>
-                        <p>Engineers signal acquisition hardware and electrode systems</p>
-                    </div>
-                    <div class="team-member">
-                        <h3>Atharva</h3>
-                        <p class="role">Machine Learning</p>
-                        <p>Develops the CNN-LSTM models and signal processing pipeline</p>
-                    </div>
-                    <div class="team-member">
-                        <h3>Craig</h3>
-                        <p class="role">Product Development</p>
-                        <p>Handles ergonomic testing and MVP refinement</p>
-                    </div>
-                    <div class="team-member">
-                        <h3>Jayden</h3>
-                        <p class="role">Clinical Validation</p>
-                        <p>Validates our ideas with clinicians and researchers</p>
-                    </div>
-                    <div class="team-member">
-                        <h3>James</h3>
-                        <p class="role">Research Coordination</p>
-                        <p>Coordinates market research with experts and patient families</p>
-                    </div>
-                </div>
-
-                <div class="advisors">
-                    <h3>Research Advisors</h3>
-                    
-                    <!-- University Seals -->
-                    <div class="university-seals">
-                        <img src="images/uchiacgo-seal.png" alt="University of Chicago" class="university-seal">
-                        <img src="images/ucdavis-seal.png" alt="UC Davis" class="university-seal">
-                        <img src="images/nw-seal.png" alt="Northwestern University" class="university-seal">
-                    </div>
-                    
-                    <div class="advisor-grid">
-                        <div class="advisor">
-                            <img src="images/uchiacgo-seal.png" alt="" class="advisor-seal">
-                            <span class="advisor-name">Dr. Nicholas Hatsopoulos</span>
-                            <span class="advisor-affiliation">University of Chicago</span>
-                            <span class="advisor-specialty">Motor Cortex BCIs</span>
-                        </div>
-                        <div class="advisor">
-                            <img src="images/ucdavis-seal.png" alt="" class="advisor-seal">
-                            <span class="advisor-name">Dr. Sergey Stavisky</span>
-                            <span class="advisor-affiliation">UC Davis</span>
-                            <span class="advisor-specialty">2023 International BCI Award Winner</span>
-                        </div>
-                        <div class="advisor">
-                            <img src="images/uchiacgo-seal.png" alt="" class="advisor-seal">
-                            <span class="advisor-name">Dr. Howard Nusbaum</span>
-                            <span class="advisor-affiliation">UChicago Psychology</span>
-                            <span class="advisor-specialty">Speech & Language</span>
-                        </div>
-                        <div class="advisor">
-                            <img src="images/nw-seal.png" alt="" class="advisor-seal">
-                            <span class="advisor-name">Dr. Dina Simkin</span>
-                            <span class="advisor-affiliation">Northwestern</span>
-                            <span class="advisor-specialty">Clinical Neurology</span>
-                        </div>
-                    </div>
-                    <p class="advisor-quote">"The bar is incredibly low for non-invasive ALS speech solutions—a product like this, if done properly, would be revolutionary."<br><span class="quote-attribution">— Dr. Nicholas Hatsopoulos, University of Chicago</span></p>
-                </div>
-
-                <div class="clinical-partners">
-                    <h3>Clinical Partners</h3>
-                    <p>Pilot program with 50 early-stage ALS and post-stroke dysarthria patients at Northwestern Medicine and Shirley Ryan AbilityLab.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Survey Validation -->
-        <section class="validation" aria-labelledby="validation-heading">
-            <div class="container">
-                <h2 id="validation-heading" class="section-title">Market Validation</h2>
-                <p class="section-intro">We surveyed 127 patients, families, and clinicians to validate the need.</p>
-                
-                <div class="survey-grid">
-                    <div class="survey-group">
-                        <h3>68 Patients & Families</h3>
-                        <div class="survey-stats">
-                            <div class="survey-stat">
-                                <span class="survey-number">91%</span>
-                                <span class="survey-label">confirmed current solutions are inadequate</span>
-                            </div>
-                            <div class="survey-stat">
-                                <span class="survey-number">87%</span>
-                                <span class="survey-label">would consider purchasing VOCL at $2,500</span>
-                            </div>
-                            <div class="survey-stat">
-                                <span class="survey-number">94%</span>
-                                <span class="survey-label">prefer non-invasive options over surgery</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="survey-group">
-                        <h3>59 Clinicians</h3>
-                        <div class="survey-stats">
-                            <div class="survey-stat">
-                                <span class="survey-number">93%</span>
-                                <span class="survey-label">recognize unmet need for affordable speech restoration</span>
-                            </div>
-                            <div class="survey-stat">
-                                <span class="survey-number">98%</span>
-                                <span class="survey-label">believe VOCL addresses a critical gap</span>
-                            </div>
-                            <div class="survey-stat">
-                                <span class="survey-number">86%</span>
-                                <span class="survey-label">would recommend to patients if FDA approved</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact" id="contact" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading" class="section-title">Get In Touch</h2>
-                <p class="section-intro">Interested in our research, potential collaboration, or just want to follow our progress?</p>
-                
-                <div class="contact-grid">
-                    <div class="contact-option">
-                        <h3>Researchers</h3>
-                        <p>Academic researchers in BCI, speech science, or neurology interested in collaboration.</p>
-                    </div>
-                    <div class="contact-option">
-                        <h3>Clinicians</h3>
-                        <p>Speech-language pathologists, neurologists, and rehabilitation specialists.</p>
-                    </div>
-                    <div class="contact-option">
-                        <h3>Families</h3>
-                        <p>Patients and caregivers who want to learn more or share their experiences.</p>
-                    </div>
-                </div>
-
-                <div class="contact-cta">
-                    <a href="mailto:vocl.speak@gmail.com" class="btn btn-primary btn-large">
-                        vocl.speak@gmail.com
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -613,16 +190,16 @@
                     <div class="footer-col">
                         <h4>Learn</h4>
                         <ul>
-                            <li><a href="#story">Our Story</a></li>
-                            <li><a href="#how-it-works">How It Works</a></li>
-                            <li><a href="#technology">Technology</a></li>
+                            <li><a href="story.html">Our Story</a></li>
+                            <li><a href="how-it-works.html">How It Works</a></li>
+                            <li><a href="technology.html">Technology</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
                         <h4>Connect</h4>
                         <ul>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
