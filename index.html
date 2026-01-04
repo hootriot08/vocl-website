@@ -70,83 +70,8 @@
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="product-showcase">
-                        <div class="device-illustration">
-                            <svg viewBox="0 0 450 400" class="device-svg" aria-hidden="true">
-                                <!-- 8-Channel Electrode Visualization -->
-                                <defs>
-                                    <linearGradient id="signalGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" style="stop-color:#0066cc;stop-opacity:0.2" />
-                                        <stop offset="50%" style="stop-color:#0066cc;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#0066cc;stop-opacity:0.2" />
-                                    </linearGradient>
-                                    <filter id="glow">
-                                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                                        <feMerge>
-                                            <feMergeNode in="coloredBlur"/>
-                                            <feMergeNode in="SourceGraphic"/>
-                                        </feMerge>
-                                    </filter>
-                                </defs>
-                                
-                                <!-- Head outline - side profile view -->
-                                <path d="M180 30 
-                                         C280 30 320 80 330 140
-                                         C340 180 335 220 320 260
-                                         C310 290 290 320 260 340
-                                         L220 360
-                                         L200 380
-                                         L200 400
-                                         L180 400
-                                         L180 380
-                                         L160 360
-                                         L140 340
-                                         C110 310 90 270 85 230
-                                         C80 180 90 130 120 90
-                                         C140 60 160 30 180 30Z" 
-                                      fill="none" stroke="#1a1a2e" stroke-width="2" opacity="0.2"/>
-                                
-                                <!-- 8 Electrode positions - all on same side of face -->
-                                <g class="electrodes" filter="url(#glow)">
-                                    <!-- Upper lip (2 electrodes) -->
-                                    <circle cx="240" cy="195" r="12" fill="#0066cc" class="electrode e1"/>
-                                    <circle cx="270" cy="190" r="12" fill="#0066cc" class="electrode e2"/>
-                                    
-                                    <!-- Lower lip (2 electrodes) -->
-                                    <circle cx="235" cy="225" r="12" fill="#0066cc" class="electrode e3"/>
-                                    <circle cx="265" cy="230" r="12" fill="#0066cc" class="electrode e4"/>
-                                    
-                                    <!-- Depressor labii inferioris / Chin (2 electrodes) -->
-                                    <circle cx="220" cy="270" r="12" fill="#0066cc" class="electrode e5"/>
-                                    <circle cx="250" cy="280" r="12" fill="#0066cc" class="electrode e6"/>
-                                    
-                                    <!-- Neck / Platysma (2 electrodes) -->
-                                    <circle cx="195" cy="340" r="12" fill="#0066cc" class="electrode e7"/>
-                                    <circle cx="210" cy="365" r="12" fill="#0066cc" class="electrode e8"/>
-                                </g>
-                                
-                                <!-- Signal waves -->
-                                <g class="signal-lines">
-                                    <path d="M285 195 Q310 195 325 180 Q340 165 355 185 Q370 205 385 185 Q400 165 420 185" 
-                                          fill="none" stroke="url(#signalGradient)" stroke-width="2.5" class="signal s1"/>
-                                    <path d="M280 230 Q305 230 320 215 Q335 200 350 220 Q365 240 380 220 Q395 200 420 220" 
-                                          fill="none" stroke="url(#signalGradient)" stroke-width="2.5" class="signal s2"/>
-                                    <path d="M265 280 Q290 280 305 265 Q320 250 335 270 Q350 290 365 270 Q380 250 405 270" 
-                                          fill="none" stroke="url(#signalGradient)" stroke-width="2.5" class="signal s3"/>
-                                    <path d="M230 365 Q255 365 270 350 Q285 335 300 355 Q315 375 330 355 Q345 335 370 355" 
-                                          fill="none" stroke="url(#signalGradient)" stroke-width="2.5" class="signal s4"/>
-                                </g>
-                                
-                                <!-- Labels -->
-                                <g class="electrode-labels" font-size="12" fill="#1a1a2e" opacity="0.7">
-                                    <text x="120" y="195">Upper lip (2)</text>
-                                    <text x="120" y="230">Lower lip (2)</text>
-                                    <text x="100" y="275">Chin (2)</text>
-                                    <text x="100" y="355">Neck (2)</text>
-                                </g>
-                            </svg>
-                        </div>
-                        <p class="device-caption">8-channel EMG electrode placement</p>
+                    <div class="hero-logo-showcase">
+                        <img src="logo.png" alt="VOCL" class="hero-logo-img">
                     </div>
                 </div>
             </div>

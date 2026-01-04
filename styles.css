@@ -210,6 +210,7 @@ strong {
 .nav-logo {
     display: flex;
     align-items: center;
+    flex: 0 0 auto;
 }
 
 .logo-img {
@@ -220,7 +221,9 @@ strong {
 .nav-links {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
+    flex: 1;
 }
 
 .nav-links a {
@@ -328,7 +331,6 @@ strong {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-3xl);
     align-items: center;
-    width: 100%;
 }
 
 .hero-label {
@@ -361,6 +363,31 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hero-logo-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-xl);
+}
+
+.hero-logo-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Show logo in responsive mode too */
+@media (max-width: 1024px) {
+    .hero-visual {
+        order: -1;
+        margin-bottom: var(--space-xl);
+    }
+    
+    .hero-logo-img {
+        max-width: 200px;
+    }
 }
 
 .product-showcase {
@@ -1380,7 +1407,7 @@ strong {
 /* =============================================
    RESPONSIVE DESIGN
    ============================================= */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .hero .container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1397,10 +1424,6 @@ strong {
     
     .hero-cta {
         justify-content: center;
-    }
-    
-    .hero-visual {
-        margin-top: var(--space-xl);
     }
     
     .steps-grid,
