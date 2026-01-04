@@ -365,28 +365,87 @@ strong {
     align-items: center;
 }
 
-.hero-logo-showcase {
+.electrode-visual {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: var(--space-xl);
+    gap: var(--space-md);
 }
 
-.hero-logo-img {
+.model-container {
+    position: relative;
+    display: inline-block;
+}
+
+.model-img {
     width: 100%;
-    max-width: 300px;
+    max-width: 380px;
     height: auto;
 }
 
-/* Show logo in responsive mode too */
+.signal-wave {
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #0066cc, transparent);
+    border-radius: 2px;
+    animation: waveFlow 2s ease-in-out infinite;
+}
+
+.wave-1 {
+    top: 42%;
+    right: -10%;
+    animation-delay: 0s;
+}
+
+.wave-2 {
+    top: 55%;
+    right: -15%;
+    animation-delay: 0.5s;
+}
+
+.wave-3 {
+    top: 75%;
+    right: 5%;
+    animation-delay: 1s;
+}
+
+@keyframes waveFlow {
+    0%, 100% {
+        opacity: 0.3;
+        transform: translateX(0) scaleX(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(10px) scaleX(1);
+    }
+}
+
+.electrode-caption {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
+/* Responsive electrode visual */
 @media (max-width: 1024px) {
     .hero-visual {
         order: -1;
         margin-bottom: var(--space-xl);
     }
     
-    .hero-logo-img {
-        max-width: 200px;
+    .model-img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .model-img {
+        max-width: 250px;
+    }
+    
+    .signal-wave {
+        display: none;
     }
 }
 
