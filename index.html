@@ -42,6 +42,7 @@
             <ul class="nav-links">
                 <li><a href="#story">Our Story</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#demo">Demo</a></li>
                 <li><a href="#technology">Technology</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact" class="nav-cta">Contact Us</a></li>
@@ -59,6 +60,7 @@
         <ul class="mobile-nav-links">
             <li><a href="#story">Our Story</a></li>
             <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#demo">Demo</a></li>
             <li><a href="#technology">Technology</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#contact">Contact Us</a></li>
@@ -224,6 +226,50 @@
                     <div class="insight-content">
                         <h3>Why EMG?</h3>
                         <p>EMG signals from attempted speech are <strong>3-5× stronger</strong> than imagined speech signals—rendering brain surgery obsolete while delivering natural, non-invasive communication.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Demo Portal -->
+        <section class="demo-portal" id="demo" aria-labelledby="demo-heading">
+            <div class="container">
+                <div class="demo-header">
+                    <h2 id="demo-heading" class="section-title">Experience VOCL</h2>
+                    <p class="section-intro">This interactive demonstration simulates the VOCL experience. Build phoneme sequences through subvocalization patterns, then visualize real-world EMG signals captured from actual users.</p>
+                </div>
+                
+                <div class="demo-container">
+                    <div class="demo-frame-wrapper">
+                        <div class="demo-frame-header">
+                            <div class="demo-status">
+                                <span class="status-dot"></span>
+                                <span>Live Demo</span>
+                            </div>
+                            <span class="demo-badge">Interactive</span>
+                        </div>
+                        <iframe 
+                            src="https://voclspeak.streamlit.app/?embedded=true" 
+                            class="demo-iframe"
+                            title="VOCL Interactive Demo - Phoneme Recognition Simulator"
+                            allow="clipboard-write"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
+                    <div class="demo-sidebar">
+                        <div class="demo-info-card">
+                            <h3>What You're Seeing</h3>
+                            <p>Each phoneme represents distinct muscle activation patterns that VOCL learns to recognize and translate into speech.</p>
+                        </div>
+                        <div class="demo-info-card">
+                            <h3>Real EMG Data</h3>
+                            <p>The signal visualizations are captured from actual users during subvocalization attempts—the same data our ML models train on.</p>
+                        </div>
+                        <div class="demo-info-card">
+                            <h3>Try It</h3>
+                            <p>Select phonemes to see their unique EMG signatures. Notice how different sounds produce distinct waveform patterns.</p>
+                        </div>
                     </div>
                 </div>
             </div>
